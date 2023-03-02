@@ -1,0 +1,118 @@
+[
+  {
+    "shortDescription" : "Stable Diffusion generates images conditioned on text and\/or other images as input through the diffusion process. Please refer to https:\/\/arxiv.org\/abs\/2112.10752 for details.",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "The latent embeddings from the unet model from the input image.",
+        "shape" : "[]",
+        "name" : "latent_dist",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : ".\/diffusers",
+    "modelParameters" : [
+
+    ],
+    "author" : "Please refer to the Model Card available at huggingface.co\/.\/diffusers",
+    "specificationVersion" : 7,
+    "storagePrecision" : "Float16",
+    "license" : "OpenRAIL (https:\/\/huggingface.co\/spaces\/CompVis\/stable-diffusion-license)",
+    "mlProgramOperationTypeHistogram" : {
+      "Transpose" : 7,
+      "Ios16.exp" : 1,
+      "Ios16.reduceMean" : 44,
+      "Ios16.softmax" : 1,
+      "Split" : 1,
+      "Ios16.linear" : 4,
+      "Ios16.add" : 35,
+      "Ios16.realDiv" : 22,
+      "Ios16.square" : 22,
+      "Pad" : 3,
+      "Ios16.sub" : 22,
+      "Ios16.cast" : 1,
+      "Ios16.clip" : 1,
+      "Ios16.conv" : 28,
+      "Ios16.matmul" : 2,
+      "Ios16.reshape" : 54,
+      "Ios16.batchNorm" : 22,
+      "Ios16.silu" : 21,
+      "Ios16.sqrt" : 22,
+      "Ios16.mul" : 6
+    },
+    "computePrecision" : "Mixed (Float32, Float16, Int32)",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "13.0",
+      "tvOS" : "16.0",
+      "watchOS" : "9.0",
+      "iOS" : "16.0",
+      "macCatalyst" : "16.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 3 × 512 × 512)",
+        "shortDescription" : "An image of the correct size to create the latent space with, image2image and in-painting.",
+        "shape" : "[1, 3, 512, 512]",
+        "name" : "sample",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 4 × 64 × 64)",
+        "shortDescription" : "Latent noise for `DiagonalGaussianDistribution` operation.",
+        "shape" : "[1, 4, 64, 64]",
+        "name" : "diagonal_noise",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 4 × 64 × 64)",
+        "shortDescription" : "Latent noise for use with strength parameter of image2image",
+        "shape" : "[1, 4, 64, 64]",
+        "name" : "noise",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 1)",
+        "shortDescription" : "Precalculated `sqrt_alphas_cumprod` value based on strength and the current schedular's alphasCumprod values",
+        "shape" : "[1, 1]",
+        "name" : "sqrt_alphas_cumprod",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 1)",
+        "shortDescription" : "Precalculated `sqrt_one_minus_alphas_cumprod` value based on strength and the current schedular's alphasCumprod values",
+        "shape" : "[1, 1]",
+        "name" : "sqrt_one_minus_alphas_cumprod",
+        "type" : "MultiArray"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "6.2",
+      "com.github.apple.coremltools.source" : "torch==1.13.1"
+    },
+    "generatedClassName" : "Stable_Diffusion_version___diffusers_vae_encoder",
+    "method" : "predict"
+  }
+]
