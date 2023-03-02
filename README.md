@@ -6,7 +6,7 @@ To use them, simply swap the files found in your model folder.
 ### Other Resources
 
 Already compiled models can be [found here](https://huggingface.co/coreml).\
-If you want to convert a model yourself, you can use the scripts found in my [CoreML-Scripts](https://github.com/Zabriskije/CoreML-scripts) repo.
+If you want to convert a model yourself, you can use the scripts found in my [Core ML Scripts](https://github.com/Zabriskije/CoreML-scripts) repo.
 
 ### Usage
 
