@@ -1,17 +1,17 @@
 # Core ML VAEs
 
 Hi folks! Here you'll find Core ML VAEs already converted to MLMODELC.\
-To use them, simply swap the files found in your model folder.
+
+### Usage
+
+Donwload the .mlmodelc folders and swap them with the ones found in your model folder. You can visit my [Hugging Face](https://huggingface.co/Zabriskije/CoreML-VAEs) repo if you prefer to download them as .zip files. I couldn't upload them already packed as .zip here since the GitHub limit for files are 100MB, and I don't want to pay for Git LFS storage.\
+Based on the version in use (`split-einsum`, `original`, `original_512x768`, or `original_768x512`), you must choose the corresponding VAE.\
+Always make a backup of your original files in case you don't like the new look ;)
 
 ### Other Resources
 
 Already compiled models can be [found here](https://huggingface.co/coreml).\
 If you want to convert a model yourself, you can use the scripts found in my [Core ML Scripts](https://github.com/Zabriskije/CoreML-scripts) repo.
-
-### Usage
-
-Based on the version in use (`split-einsum`, `original`, `original_512x768`, or `original_768x512`), you must choose the corresponding VAE.\
-Always make a backup of your original files in case you don't like the new look ;)
 
 ## Choosing a VAE
 
@@ -22,4 +22,4 @@ Always make a backup of your original files in case you don't like the new look 
 
 ## Comparison
 
-![xy-vae](https://user-images.githubusercontent.com/101254295/222575577-3e34d050-35a0-48a3-acdb-a1302617b59c.png)
+![comparison](https://github.com/Zabriskije/CoreML-VAEs/blob/main/comparison.png)
