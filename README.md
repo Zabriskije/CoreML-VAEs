@@ -22,4 +22,4 @@ If you want to convert a model yourself, you can use the scripts found in my [Co
 
 ## Comparison
 
-![comparison](https://github.com/Zabriskije/CoreML-VAEs/blob/main/comparison.png)
+![comparison](https://raw.githubusercontent.com/Zabriskije/CoreML-VAEs/main/comparison.png)
