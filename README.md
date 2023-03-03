@@ -1,6 +1,6 @@
 # Core ML VAEs
 
-Hi folks! Here you'll find Core ML VAEs already converted to MLMODELC.\
+Hi folks! Here you'll find Core ML VAEs already converted to MLMODELC.
 
 ### Usage
 
