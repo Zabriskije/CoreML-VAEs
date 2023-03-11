@@ -1,6 +1,6 @@
 <h1 align="center">Core ML VAEs</h1>
 
-<p align="center">Original Stable Diffusion VAEs already converted to MLMODELC.</p>
+<p align="center">Original Stable Diffusion VAEs already converted to MLMODELC</p>
 
 ### Usage
 
