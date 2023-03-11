@@ -1,6 +1,6 @@
-# Core ML VAEs
+<h1 align="center">Core ML VAEs</h1>
 
-Hi folks! Here you'll find Core ML VAEs already converted to MLMODELC.
+<p align="center">Original Stable Diffusion VAEs already converted to MLMODELC.</p>
 
 ### Usage
 
