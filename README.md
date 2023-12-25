@@ -22,7 +22,3 @@ Alternatively, already compiled models can be [found here](https://huggingface.c
 - `kl-f8-anime`: for use with anime models; found in [Waifu Diffusion v1.4](https://huggingface.co/hakurei/waifu-diffusion-v1-4). Output is smoother and more contrasty than `orangemix-vae`. A lot similar to `sd-vae-ft-mse`.
 - `orangemix-vae`: for use with anime models; found in [OrangeMixs](https://huggingface.co/WarriorMama777/OrangeMixs). The absolute best if used with `CPU_AND_GPU`. Produces washed-out images if used with `CPU_AND_NE`.
 - `sd-vae-ft-mse`: for use with realistic models; found in [Stable Diffusion](https://huggingface.co/stabilityai/sd-vae-ft-mse). Basically every new realistic model has it already embedded.
-
-## Comparison
-
-![comparison](https://raw.githubusercontent.com/Zabriskije/CoreML-VAEs/main/comparison.png)
